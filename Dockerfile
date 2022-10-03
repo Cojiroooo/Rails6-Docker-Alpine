@@ -27,7 +27,7 @@ RUN apk update && \
         curl-dev
 
 COPY Gemfile ${ROOT}
-COPY Gemfile.lock ${ROOT}
+# COPY Gemfile.lock ${ROOT}
 
 RUN bundle install
 RUN apk del build-packages
